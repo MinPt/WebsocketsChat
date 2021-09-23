@@ -1,5 +1,10 @@
 const users = [];
 
+const getRooms = () => {
+  const rooms = users.map((user) => user.room);
+  return Array.from(new Set(rooms));
+};
+
 const addUser = ({ id, name, room }) => {
   name = name.trim().toLowerCase();
   room = room.trim().toLowerCase();
@@ -32,4 +37,4 @@ const getUser = (id) => {
 
 const getUserInRoom = (room) => users.filter((user) => user.room === room);
 
-module.exports = { addUser, removeUser, getUser, getUserInRoom };
+module.exports = { addUser, removeUser, getUser, getUserInRoom, getRooms };

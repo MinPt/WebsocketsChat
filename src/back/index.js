@@ -16,6 +16,7 @@ const io = socketio(server, { cors: corsOptions });
 
 const PORT = process.env.PORT || 8080;
 
+app.use(cors(corsOptions));
 app.use(router);
 
 io.on("connection", (socket) => {

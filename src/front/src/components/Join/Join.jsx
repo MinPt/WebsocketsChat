@@ -18,17 +18,17 @@ const Join = () => {
           placeholder="Name"
         />
       </Form.Group>
-      <Form.Group
+      {/* <Form.Group
         onChange={(event) => setRoom(event.target.value)}
         className="mb-3"
         controlId="formBasicPassword"
       >
         <Form.Label>Room</Form.Label>
         <Form.Control type="text" placeholder="Room" />
-      </Form.Group>
+      </Form.Group> */}
       <Link
-        onClick={(e) => (!name || !room ? e.preventDefault() : null)}
-        to={`/chat?name=${name}&room=${room}`}
+        onClick={(e) => (!name ? e.preventDefault() : null)}
+        to={`/rooms?name=${name}`}
       >
         <button className="btn btn-success">Sign In</button>
       </Link>

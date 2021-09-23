@@ -1,0 +1,15 @@
+.room {
+    background-color: #357DED;
+    width: 100%;
+    display: flex;
+}
+
+* {
+    color: white;
+}
+
+.myButton {
+    background-color: #57A773;
+    border: none;
+    padding: 0.1em;
+}
