@@ -17,7 +17,6 @@ const Rooms = ({location}) => {
 
     const getRooms = async () => {
         const rooms = await roomsApi.getRooms();
-        console.log(rooms);
         setRooms(rooms);
     };
 

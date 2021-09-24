@@ -2,6 +2,7 @@
     background-color: #357DED;
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 * {
